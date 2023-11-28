@@ -424,10 +424,16 @@
               data-wow-delay=".2s"
             >
               <h3 class="ud-contact-form-title">Send us a Message</h3>
-              <form class="ud-contact-form">
+              <form class="ud-contact-form" action="https://api.web3forms.com/submit" method="POST" id="form">
+                <input type="hidden" name="access_key" value="73d01921-fce7-4f43-b986-43eb427ef022">
+                <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
                 <div class="ud-form-group">
                   <label for="from_name">Full Name*</label>
                   <input
+                    name="name"
                     id="from_name"
                     type="text"
                     placeholder="Victor Jabagaraj"
@@ -436,6 +442,7 @@
                 <div class="ud-form-group">
                   <label for="email_id">Email*</label>
                   <input
+                    name="email_id"
                     id="email_id"
                     type="email"
                     placeholder="example@yourmail.com"
@@ -444,6 +451,7 @@
                 <div class="ud-form-group">
                   <label for="phone_no">Phone*</label>
                   <input
+                    name="phone_no"
                     id="phone_no"
                     type="text"
                     placeholder="+91 89394 52526"
@@ -452,6 +460,7 @@
                 <div class="ud-form-group">
                   <label for="message">Message*</label>
                   <textarea
+                    name="message"
                     id="message"
                     rows="1"
                     placeholder="type your message here"
@@ -462,6 +471,7 @@
                     Send Message
                   </button>
                 </div>
+                <div id="result"></div>
               </form>
             </div>
           </div>
@@ -579,6 +589,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
