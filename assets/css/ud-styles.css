@@ -2243,12 +2243,12 @@ p {
   color: var(--white);
 }
 
-.ud-blog-share-links a.facebook {
-  background: #4064ac;
+.ud-blog-share-links a.whatsapp {
+  background: #40ac57;
 }
 
-.ud-blog-share-links a.facebook:hover {
-  background: #315294;
+.ud-blog-share-links a.whatsapp:hover {
+  background: #319431;
 }
 
 .ud-blog-share-links a.twitter {
@@ -2611,3 +2611,34 @@ p {
   }
 }
 /*# sourceMappingURL=ud-styles.css.map */
+
+.cgf__container{
+  
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 30px !important;
+  font-family: var(--font) !important;
+}
+
+.cgf__copy{
+  display: none;
+}
+
+.cgf__btn{
+
+display: inline-block !important;
+text-align: center!important;
+white-space: nowrap!important;
+vertical-align: middle !important;
+font-weight: 500 !important;
+font-size: 16px !important;
+border-radius: 5px !important;
+padding: 15px 25px !important;
+border: 1px solid transparent !important;
+color: var(--white) !important;
+cursor: pointer !important;
+z-index: 5 !important;
+-webkit-transition: all 0.4s ease-out 0s !important;
+transition: all 0.4s ease-out 0s !important;
+background: var(--primary-color) !important;
+}
